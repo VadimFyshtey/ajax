@@ -1,0 +1,20 @@
+#load{
+    background-image: url("prelodar.gif");
+    position: fixed;
+    left: 45%;
+    top:45%;
+    width: 128px;
+    height: 128px;
+    z-index: 150;
+    display: none;
+}
+#lod{
+    background-image: url("prelodar.gif");
+    position: fixed;
+    left: 45%;
+    top:45%;
+    width: 128px;
+    height: 128px;
+    z-index: 150;
+    display: none;
+}

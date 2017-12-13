@@ -1,11 +1,13 @@
 jQuery(document).ready(function ($) {
 
+    var firstSection = '/' + location.pathname.replace('/', '').split('/')[0] + '/index.php';
+
     //Сортировка
     $(".sort input").change(function () {
        var id = $(this).attr('id');
        $('#load').fadeIn(1000, function () {
            $.ajax({
-                url: '/sort/'+id,
+                url: firstSection + '/sort/'+id,
                 type: 'get',
                 data: 'sort_id='+id,
 
@@ -13,7 +15,7 @@ jQuery(document).ready(function ($) {
                     $('body').html(html);
                     $('#load').fadeOut(400);
 
-                    var str = '/sort/' + id;
+                    var str =  firstSection + '/sort/' + id;
                     if(window.location.pathname.length <= 7){
                         history.pushState(null, null, str);
                     }
@@ -26,7 +28,7 @@ jQuery(document).ready(function ($) {
     $(".buy a").click(function () {
         var id = $(this).attr('data-id');
         $.ajax({
-            url: "/buy",
+            url: firstSection + "/buy",
             type: 'post',
             data: {
                 'prod_id': id
@@ -49,7 +51,7 @@ jQuery(document).ready(function ($) {
 
         $('#load').fadeIn(1000, function () {
             $.ajax({
-                url: '/category/'+id,
+                url: firstSection + '/category/'+id,
                 type: 'get',
                 data: {
                     'cat_id': id
@@ -59,10 +61,8 @@ jQuery(document).ready(function ($) {
                     $('body').html(html);
                     $('#load').fadeOut(400);
 
-                    var str = '/category/' + id;
-                    if(window.location.pathname.length <= 11){
+                    var str = firstSection + '/category/' + id;
                         history.pushState(null, null, str);
-                    }
 
                 }
             });
@@ -73,11 +73,12 @@ jQuery(document).ready(function ($) {
 
         $(".sort1").on('change', 'input', function () {
             var str = window.location.pathname;
-            var s = str.substr(10, 1);
+            var s = str.substr(-1);
+            alert(s);
             var sort_id = $(this).attr('id');
             $('#load').fadeIn(1000, function () {
                 $.ajax({
-                    url: '/category/'+s+'/sort/'+sort_id,
+                    url: firstSection + '/category/'+s+'/sort/'+sort_id,
                     type: 'get',
                     data: {
                         'cat_id': s,
@@ -87,6 +88,9 @@ jQuery(document).ready(function ($) {
                     success: function (html) {
                         $('body').html(html);
                         $('#load').fadeOut(400);
+
+                        var str = firstSection + '/category/' + s + '/sort/' + sort_id;
+                        history.pushState(null, null, str);
                     }
                 });
             });

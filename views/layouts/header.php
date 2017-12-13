@@ -11,11 +11,11 @@
     <title>Тестовое задание #1</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="/template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/<?php echo $GLOBALS['start_section']; ?>/template/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/template/css/shop-homepage.css" rel="stylesheet">
-    <link href="/template/css/main.css" rel="stylesheet">
+    <link href="/<?php echo $GLOBALS['start_section']; ?>/template/css/shop-homepage.css" rel="stylesheet">
+    <link href="/<?php echo $GLOBALS['start_section']; ?>/template/css/main.css" rel="stylesheet">
 
 </head>
 

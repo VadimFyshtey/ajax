@@ -17,7 +17,21 @@ class Router
     private function getURI()
     {
         if (!empty($_SERVER['REQUEST_URI'])) {
-            return trim($_SERVER['REQUEST_URI'], '/');
+            $uri = trim($_SERVER['REQUEST_URI'], '/');
+
+            $tmp = explode('/', $uri);
+            $GLOBALS['start_section'] = array_shift($tmp);
+
+            if (strpos($uri, 'index.php') === false) {
+                $uri = explode('/', $uri);
+                $GLOBALS['start_section'] = array_shift($uri);
+                return implode('/', $uri);
+            } else {
+                $uri = explode('index.php', $uri, 2);
+                return trim(array_pop($uri), '/');
+            }
+
+
         }
     }
 

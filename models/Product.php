@@ -81,16 +81,26 @@ class Product
 
     }
 
-    public static function getProductsListByCategory($cat_id){
+    public static function getProductsListByCategory($cat_id, $sort_id = false){
 
         if($cat_id){
 
             $db = Db::getConnection();
 
-
             $products = [];
 
             $sql = "SELECT * FROM product WHERE category_id = '$cat_id'";
+
+            if($sort_id){
+                if($sort_id == 1){
+                    $sql .= ' ORDER BY price ASC';
+                } elseif($sort_id == 2){
+                    $sql .= ' ORDER BY name ASC';
+                } elseif ($sort_id == 3){
+                    $sql .= ' ORDER BY date DESC';
+                }
+
+            }
 
             $result = $db->query($sql);
 

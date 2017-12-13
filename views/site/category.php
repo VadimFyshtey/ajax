@@ -6,8 +6,15 @@
 
         <?php include_once(ROOT . '/views/layouts/aside.php') ?>
 
-        <div class="col-lg-9">
+        <div class="col-lg-9 ">
             <br/>
+            <div id="load"></div>
+            <div class="sort1">
+                <strong>Сортировка: </strong>
+                По цене: <input type="radio" name="sort" id="1"/>
+                По алфавиту: <input type="radio" name="sort" id="2"/>
+                По дате: <input type="radio" name="sort" id="3"/>
+            </div>
             <div id="load"></div>
             <div class="row">
                 <?php foreach ($categoryProducts as $product): ?>

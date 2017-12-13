@@ -5,14 +5,18 @@ jQuery(document).ready(function ($) {
        var id = $(this).attr('id');
        $('#load').fadeIn(1000, function () {
            $.ajax({
-                url: '/sort/',
-                type: 'post',
+                url: '/sort/'+id,
+                type: 'get',
                 data: 'sort_id='+id,
 
                 success: function (html) {
-                    $('body').html(html).hide().slideDown(400);
+                    $('body').html(html);
                     $('#load').fadeOut(400);
 
+                    var str = '/sort/' + id;
+                    if(window.location.pathname.length <= 7){
+                        history.pushState(null, null, str);
+                    }
                 }
            });
        });
@@ -39,24 +43,55 @@ jQuery(document).ready(function ($) {
     });
 
     //Категории
-    $(".list-group a").click(function () {
+    $(".list-group a").click(function (e) {
+        e.preventDefault();
         var id = $(this).attr('data-id');
-        window.location.href = '#'+id;
+
         $('#load').fadeIn(1000, function () {
             $.ajax({
-                url: '/category/',
-                type: 'post',
+                url: '/category/'+id,
+                type: 'get',
                 data: {
                     'cat_id': id
                 },
 
                 success: function (html) {
-                    $('body').html(html).hide().slideDown(400);
+                    $('body').html(html);
                     $('#load').fadeOut(400);
-                    // history.pushState(null, null, '/category/1');
+
+                    var str = '/category/' + id;
+                    if(window.location.pathname.length <= 11){
+                        history.pushState(null, null, str);
+                    }
+
                 }
             });
         });
     });
+
+    //Сортирока категорий
+
+        $(".sort1").on('change', 'input', function () {
+            var str = window.location.pathname;
+            var s = str.substr(10, 1);
+            var sort_id = $(this).attr('id');
+            $('#load').fadeIn(1000, function () {
+                $.ajax({
+                    url: '/category/'+s+'/sort/'+sort_id,
+                    type: 'get',
+                    data: {
+                        'cat_id': s,
+                        'sort_id': sort_id
+                    },
+
+                    success: function (html) {
+                        $('body').html(html);
+                        $('#load').fadeOut(400);
+                    }
+                });
+            });
+        })
+
+
 
 });

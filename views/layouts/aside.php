@@ -5,7 +5,7 @@
     <div class="list-group">
         <div id="lod"></div>
         <?php foreach ($categories as $category): ?>
-            <a data-id="<?= $category['id'] ?>" href="#" class="categori list-group-item"><?= $category['name'] ?></a>
+            <a data-id="<?= $category['id'] ?>" href="" class="categori list-group-item"><?= $category['name'] ?></a>
         <?php endforeach; ?>
     </div>
 

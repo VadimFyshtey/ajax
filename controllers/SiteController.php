@@ -23,12 +23,11 @@ class SiteController
         return true;
     }
 
-    public function actionCategory(){
+    public function actionCategory($cat_id){
 
-        if($_POST['cat_id']){
-            $cat_id = $_POST['cat_id'];
+        if(@$_GET['cat_id']){
+            $cat_id = $_GET['cat_id'];
         }
-
 
         $categories = Category::getCategoriesList();
 
@@ -40,16 +39,20 @@ class SiteController
 
     }
 
-    public function actionMod($cat_id){
+    public function actionMod($cat_id, $sort_id){
 
-        if($_POST['cat_id']){
-            $cat_id = $_POST['cat_id'];
+        if(@$_GET['cat_id']){
+            $cat_id = $_GET['cat_id'];
         }
 
+        if(@$_GET['sort_id']){
+            $sort_id = $_GET['sort_id'];
+
+        }
 
         $categories = Category::getCategoriesList();
 
-        $categoryProducts = Product::getProductsListByCategory($cat_id);
+        $categoryProducts = Product::getProductsListByCategory($cat_id, $sort_id);
 
         require_once(ROOT . '/views/site/category.php');
 
@@ -57,10 +60,10 @@ class SiteController
 
     }
 
-    public function actionSort() {
+    public function actionSort($val) {
 
-        if($_POST['sort_id']){
-            $val = $_POST['sort_id'];
+        if(@$_GET['sort_id']){
+            $val = $_GET['sort_id'];
 
         }
 

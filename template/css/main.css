@@ -1,0 +1,10 @@
+#load{
+    background-image: url("giphy.gif");
+    position: fixed;
+    left: 45%;
+    top:40%;
+    width: 200px;
+    height: 200px;
+    z-index: 150;
+    display: none;
+}

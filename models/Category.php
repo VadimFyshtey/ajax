@@ -11,7 +11,7 @@ class Category
 
     public static function getCategoriesList(){
 
-        $db = Db::getConnection();
+        $db = DB::run();
 
         $categoryList = [];
 

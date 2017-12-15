@@ -35,6 +35,8 @@ jQuery(document).ready(function ($) {
             },
 
             success: function (html) {
+                $('div.show').hide();
+                $('div.show').last().show();
                 var p = JSON.parse(html);
                 $("#myModal").modal();
                 $('.modal-body #name').html(p[0].name);
@@ -48,7 +50,6 @@ jQuery(document).ready(function ($) {
     $(".list-group a").click(function (e) {
         e.preventDefault();
         var id = $(this).attr('data-id');
-
         $('#load').fadeIn(200, function () {
             $.ajax({
                 url: firstSection + '/category/'+id,
@@ -63,7 +64,6 @@ jQuery(document).ready(function ($) {
 
                     var str = firstSection + '/category/' + id;
                         history.pushState(null, null, str);
-
                 }
             });
         });

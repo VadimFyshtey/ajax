@@ -14265,3 +14265,706 @@
 [Fri Dec 15 13:59:40.576542 2017] [:error] [pid 5922] [client 127.0.0.1:46240] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
 [Fri Dec 15 13:59:41.863933 2017] [:error] [pid 5922] [client 127.0.0.1:46240] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
 [Fri Dec 15 13:59:43.098867 2017] [:error] [pid 5922] [client 127.0.0.1:46240] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:11:55.595211 2017] [:error] [pid 8691] [client 127.0.0.1:47382] PHP Fatal error:  Uncaught Error: Call to private method Db::getInstance() from context 'Category' in /home/fyshtey/dev/callcenter/vaddd/models/Category.php:14\nStack trace:\n#0 /home/fyshtey/dev/callcenter/vaddd/controllers/SiteController.php(18): Category::getCategoriesList()\n#1 /home/fyshtey/dev/callcenter/vaddd/components/Router.php(75): SiteController->actionIndex()\n#2 /home/fyshtey/dev/callcenter/vaddd/index.php(11): Router->run()\n#3 {main}\n  thrown in /home/fyshtey/dev/callcenter/vaddd/models/Category.php on line 14
+[Fri Dec 15 14:19:35.016626 2017] [:error] [pid 5876] [client 127.0.0.1:47412] PHP Fatal error:  Uncaught Error: Call to undefined method Db::getInstance() in /home/fyshtey/dev/callcenter/vaddd/models/Product.php:43\nStack trace:\n#0 /home/fyshtey/dev/callcenter/vaddd/controllers/SiteController.php(20): Product::getProductList()\n#1 /home/fyshtey/dev/callcenter/vaddd/components/Router.php(75): SiteController->actionIndex()\n#2 /home/fyshtey/dev/callcenter/vaddd/index.php(11): Router->run()\n#3 {main}\n  thrown in /home/fyshtey/dev/callcenter/vaddd/models/Product.php on line 43
+[Fri Dec 15 14:22:48.349654 2017] [:error] [pid 8711] [client 127.0.0.1:47552] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/fyshtey/dev/callcenter/vaddd/components/Db.php on line 14
+[Fri Dec 15 14:22:48.349680 2017] [:error] [pid 8711] [client 127.0.0.1:47552] PHP Stack trace:
+[Fri Dec 15 14:22:48.349689 2017] [:error] [pid 8711] [client 127.0.0.1:47552] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:22:48.349695 2017] [:error] [pid 8711] [client 127.0.0.1:47552] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:22:48.349701 2017] [:error] [pid 8711] [client 127.0.0.1:47552] PHP   3. SiteController->actionIndex() /home/fyshtey/dev/callcenter/vaddd/components/Router.php:75
+[Fri Dec 15 14:22:48.349708 2017] [:error] [pid 8711] [client 127.0.0.1:47552] PHP   4. Category::getCategoriesList() /home/fyshtey/dev/callcenter/vaddd/controllers/SiteController.php:18
+[Fri Dec 15 14:22:48.349714 2017] [:error] [pid 8711] [client 127.0.0.1:47552] PHP   5. Db::getConnection() /home/fyshtey/dev/callcenter/vaddd/models/Category.php:14
+[Fri Dec 15 14:22:48.349719 2017] [:error] [pid 8711] [client 127.0.0.1:47552] PHP   6. mysqli_set_charset() /home/fyshtey/dev/callcenter/vaddd/components/Db.php:14
+[Fri Dec 15 14:24:16.783410 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/fyshtey/dev/callcenter/vaddd/components/Db.php on line 14
+[Fri Dec 15 14:24:16.783435 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP Stack trace:
+[Fri Dec 15 14:24:16.783443 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:24:16.783448 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:24:16.783454 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   3. SiteController->actionIndex() /home/fyshtey/dev/callcenter/vaddd/components/Router.php:75
+[Fri Dec 15 14:24:16.783467 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   4. Category::getCategoriesList() /home/fyshtey/dev/callcenter/vaddd/controllers/SiteController.php:18
+[Fri Dec 15 14:24:16.783472 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   5. Db::getConnection() /home/fyshtey/dev/callcenter/vaddd/models/Category.php:14
+[Fri Dec 15 14:24:16.783477 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   6. mysqli_set_charset() /home/fyshtey/dev/callcenter/vaddd/components/Db.php:14
+[Fri Dec 15 14:24:18.275430 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/fyshtey/dev/callcenter/vaddd/components/Db.php on line 14
+[Fri Dec 15 14:24:18.275461 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP Stack trace:
+[Fri Dec 15 14:24:18.275470 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:24:18.275478 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:24:18.275486 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   3. SiteController->actionIndex() /home/fyshtey/dev/callcenter/vaddd/components/Router.php:75
+[Fri Dec 15 14:24:18.275494 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   4. Category::getCategoriesList() /home/fyshtey/dev/callcenter/vaddd/controllers/SiteController.php:18
+[Fri Dec 15 14:24:18.275502 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   5. Db::getConnection() /home/fyshtey/dev/callcenter/vaddd/models/Category.php:14
+[Fri Dec 15 14:24:18.275509 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   6. mysqli_set_charset() /home/fyshtey/dev/callcenter/vaddd/components/Db.php:14
+[Fri Dec 15 14:24:19.794794 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP Warning:  mysqli_set_charset() expects exactly 2 parameters, 1 given in /home/fyshtey/dev/callcenter/vaddd/components/Db.php on line 14
+[Fri Dec 15 14:24:19.794824 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP Stack trace:
+[Fri Dec 15 14:24:19.794835 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:24:19.794844 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:24:19.794853 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   3. SiteController->actionIndex() /home/fyshtey/dev/callcenter/vaddd/components/Router.php:75
+[Fri Dec 15 14:24:19.794862 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   4. Category::getCategoriesList() /home/fyshtey/dev/callcenter/vaddd/controllers/SiteController.php:18
+[Fri Dec 15 14:24:19.794870 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   5. Db::getConnection() /home/fyshtey/dev/callcenter/vaddd/models/Category.php:14
+[Fri Dec 15 14:24:19.794878 2017] [:error] [pid 8691] [client 127.0.0.1:47578] PHP   6. mysqli_set_charset() /home/fyshtey/dev/callcenter/vaddd/components/Db.php:14
+[Fri Dec 15 14:33:49.331154 2017] [:error] [pid 5922] [client 127.0.0.1:47764] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:33:49.355976 2017] [:error] [pid 5922] [client 127.0.0.1:47764] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:00.622935 2017] [:error] [pid 5946] [client 127.0.0.1:47884] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:01.923638 2017] [:error] [pid 5946] [client 127.0.0.1:47884] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:08.175441 2017] [:error] [pid 8711] [client 127.0.0.1:47942] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:08.735498 2017] [:error] [pid 8711] [client 127.0.0.1:47942] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:20.798110 2017] [:error] [pid 5876] [client 127.0.0.1:48048] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:21.376796 2017] [:error] [pid 5876] [client 127.0.0.1:48048] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:25.730135 2017] [:error] [pid 5876] [client 127.0.0.1:48048] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:26.162170 2017] [:error] [pid 5876] [client 127.0.0.1:48048] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:27.325096 2017] [:error] [pid 5876] [client 127.0.0.1:48048] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:29.025708 2017] [:error] [pid 5876] [client 127.0.0.1:48048] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:30.079256 2017] [:error] [pid 5876] [client 127.0.0.1:48048] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:30.486928 2017] [:error] [pid 5876] [client 127.0.0.1:48048] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:35.570329 2017] [:error] [pid 5877] [client 127.0.0.1:48170] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:36.439902 2017] [:error] [pid 5877] [client 127.0.0.1:48170] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:41.141771 2017] [:error] [pid 5877] [client 127.0.0.1:48170] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:42.120434 2017] [:error] [pid 5877] [client 127.0.0.1:48170] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:51.097364 2017] [:error] [pid 5896] [client 127.0.0.1:48298] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:34:51.174522 2017] [:error] [pid 5896] [client 127.0.0.1:48298] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:35:06.073503 2017] [:error] [pid 5946] [client 127.0.0.1:48434] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:35:06.078566 2017] [:error] [pid 5946] [client 127.0.0.1:48434] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:35:14.035485 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:35:14.035513 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP Stack trace:
+[Fri Dec 15 14:35:14.035521 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:35:14.035527 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:35:14.082222 2017] [:error] [pid 5946] [client 127.0.0.1:48434] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:35:16.336398 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:35:16.336460 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP Stack trace:
+[Fri Dec 15 14:35:16.336474 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:35:16.336482 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:35:16.466068 2017] [:error] [pid 5946] [client 127.0.0.1:48434] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:35:19.097696 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:35:19.097717 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP Stack trace:
+[Fri Dec 15 14:35:19.097724 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:35:19.097729 2017] [:error] [pid 5946] [client 127.0.0.1:48434] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:35:19.195464 2017] [:error] [pid 5946] [client 127.0.0.1:48434] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:35:53.332043 2017] [:error] [pid 8691] [client 127.0.0.1:48856] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:35:53.376246 2017] [:error] [pid 8691] [client 127.0.0.1:48856] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:36:59.690198 2017] [:error] [pid 5896] [client 127.0.0.1:49394] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:36:59.700350 2017] [:error] [pid 5896] [client 127.0.0.1:49394] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:01.300088 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:37:01.300115 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP Stack trace:
+[Fri Dec 15 14:37:01.300125 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:37:01.300131 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:37:01.308012 2017] [:error] [pid 5896] [client 127.0.0.1:49394] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:04.848263 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:37:04.848283 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP Stack trace:
+[Fri Dec 15 14:37:04.848291 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:37:04.848297 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:37:04.873433 2017] [:error] [pid 5896] [client 127.0.0.1:49394] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:06.856106 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:37:06.856125 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP Stack trace:
+[Fri Dec 15 14:37:06.856132 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:37:06.856138 2017] [:error] [pid 5896] [client 127.0.0.1:49394] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:37:06.968307 2017] [:error] [pid 5896] [client 127.0.0.1:49394] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:13.874183 2017] [:error] [pid 8711] [client 127.0.0.1:49550] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:16.368240 2017] [:error] [pid 8711] [client 127.0.0.1:49550] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:17.074191 2017] [:error] [pid 8711] [client 127.0.0.1:49550] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:20.660048 2017] [:error] [pid 8711] [client 127.0.0.1:49550] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:22.718684 2017] [:error] [pid 8711] [client 127.0.0.1:49550] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:22.774215 2017] [:error] [pid 8711] [client 127.0.0.1:49550] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:43.023671 2017] [:error] [pid 5878] [client 127.0.0.1:49796] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:43.050099 2017] [:error] [pid 5878] [client 127.0.0.1:49796] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:43.990792 2017] [:error] [pid 5878] [client 127.0.0.1:49796] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:37:43.990808 2017] [:error] [pid 5878] [client 127.0.0.1:49796] PHP Stack trace:
+[Fri Dec 15 14:37:43.990815 2017] [:error] [pid 5878] [client 127.0.0.1:49796] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:37:43.990821 2017] [:error] [pid 5878] [client 127.0.0.1:49796] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:37:44.067894 2017] [:error] [pid 5878] [client 127.0.0.1:49796] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:37:47.505817 2017] [:error] [pid 5878] [client 127.0.0.1:49796] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:37:47.505839 2017] [:error] [pid 5878] [client 127.0.0.1:49796] PHP Stack trace:
+[Fri Dec 15 14:37:47.505846 2017] [:error] [pid 5878] [client 127.0.0.1:49796] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:37:47.505852 2017] [:error] [pid 5878] [client 127.0.0.1:49796] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:37:47.717022 2017] [:error] [pid 5878] [client 127.0.0.1:49796] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:07.800262 2017] [:error] [pid 5922] [client 127.0.0.1:50016] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:07.826625 2017] [:error] [pid 5922] [client 127.0.0.1:50016] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:08.910779 2017] [:error] [pid 5922] [client 127.0.0.1:50016] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:08.918548 2017] [:error] [pid 5922] [client 127.0.0.1:50016] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:13.134561 2017] [:error] [pid 5922] [client 127.0.0.1:50016] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:38:13.134588 2017] [:error] [pid 5922] [client 127.0.0.1:50016] PHP Stack trace:
+[Fri Dec 15 14:38:13.134596 2017] [:error] [pid 5922] [client 127.0.0.1:50016] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:38:13.134602 2017] [:error] [pid 5922] [client 127.0.0.1:50016] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:38:13.144196 2017] [:error] [pid 5922] [client 127.0.0.1:50016] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:15.373325 2017] [:error] [pid 5922] [client 127.0.0.1:50016] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:38:15.373347 2017] [:error] [pid 5922] [client 127.0.0.1:50016] PHP Stack trace:
+[Fri Dec 15 14:38:15.373355 2017] [:error] [pid 5922] [client 127.0.0.1:50016] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:38:15.373360 2017] [:error] [pid 5922] [client 127.0.0.1:50016] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:38:15.377716 2017] [:error] [pid 5922] [client 127.0.0.1:50016] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:55.581673 2017] [:error] [pid 5880] [client 127.0.0.1:50432] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:55.639159 2017] [:error] [pid 5880] [client 127.0.0.1:50432] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:38:56.898909 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:38:56.898938 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP Stack trace:
+[Fri Dec 15 14:38:56.898947 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:38:56.898954 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:38:57.034580 2017] [:error] [pid 5880] [client 127.0.0.1:50432] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:39:00.151867 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:39:00.151886 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP Stack trace:
+[Fri Dec 15 14:39:00.151893 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:39:00.151900 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:39:00.360767 2017] [:error] [pid 5880] [client 127.0.0.1:50432] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:39:06.069472 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:39:06.069495 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP Stack trace:
+[Fri Dec 15 14:39:06.069502 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:39:06.069508 2017] [:error] [pid 5880] [client 127.0.0.1:50432] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:39:06.086632 2017] [:error] [pid 5880] [client 127.0.0.1:50432] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:39:23.477035 2017] [:error] [pid 5877] [client 127.0.0.1:50688] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:39:23.547820 2017] [:error] [pid 5877] [client 127.0.0.1:50688] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:39:27.176523 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:39:27.176539 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP Stack trace:
+[Fri Dec 15 14:39:27.176546 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:39:27.176552 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:39:27.355240 2017] [:error] [pid 5877] [client 127.0.0.1:50688] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:39:29.815416 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:39:29.815454 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP Stack trace:
+[Fri Dec 15 14:39:29.815464 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:39:29.815471 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:39:29.958785 2017] [:error] [pid 5877] [client 127.0.0.1:50688] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:39:32.192380 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:39:32.192401 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP Stack trace:
+[Fri Dec 15 14:39:32.192411 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:39:32.192417 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:39:32.253488 2017] [:error] [pid 5877] [client 127.0.0.1:50688] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:39:34.579198 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:39:34.579229 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP Stack trace:
+[Fri Dec 15 14:39:34.579239 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:39:34.579245 2017] [:error] [pid 5877] [client 127.0.0.1:50688] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:39:34.712524 2017] [:error] [pid 5877] [client 127.0.0.1:50688] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:41:19.602876 2017] [:error] [pid 8711] [client 127.0.0.1:51672] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:41:19.707484 2017] [:error] [pid 8711] [client 127.0.0.1:51672] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:41:38.138342 2017] [:error] [pid 5922] [client 127.0.0.1:51776] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:41:38.138371 2017] [:error] [pid 5922] [client 127.0.0.1:51776] PHP Stack trace:
+[Fri Dec 15 14:41:38.138379 2017] [:error] [pid 5922] [client 127.0.0.1:51776] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:41:38.138385 2017] [:error] [pid 5922] [client 127.0.0.1:51776] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:41:38.265186 2017] [:error] [pid 5922] [client 127.0.0.1:51776] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:41:43.586739 2017] [:error] [pid 5922] [client 127.0.0.1:51776] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:41:43.586759 2017] [:error] [pid 5922] [client 127.0.0.1:51776] PHP Stack trace:
+[Fri Dec 15 14:41:43.586770 2017] [:error] [pid 5922] [client 127.0.0.1:51776] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:41:43.586776 2017] [:error] [pid 5922] [client 127.0.0.1:51776] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:41:43.733168 2017] [:error] [pid 5922] [client 127.0.0.1:51776] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:44:55.619035 2017] [:error] [pid 8691] [client 127.0.0.1:53526] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:44:55.621615 2017] [:error] [pid 8691] [client 127.0.0.1:53526] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:45:24.325100 2017] [:error] [pid 17341] [client 127.0.0.1:53782] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:45:24.378492 2017] [:error] [pid 17341] [client 127.0.0.1:53782] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:47:46.596574 2017] [:error] [pid 5946] [client 127.0.0.1:54988] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:47:46.596597 2017] [:error] [pid 5946] [client 127.0.0.1:54988] PHP Stack trace:
+[Fri Dec 15 14:47:46.596605 2017] [:error] [pid 5946] [client 127.0.0.1:54988] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:47:46.596610 2017] [:error] [pid 5946] [client 127.0.0.1:54988] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:47:46.639472 2017] [:error] [pid 5946] [client 127.0.0.1:54988] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:49:06.828520 2017] [:error] [pid 5878] [client 127.0.0.1:55748] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:49:06.828539 2017] [:error] [pid 5878] [client 127.0.0.1:55748] PHP Stack trace:
+[Fri Dec 15 14:49:06.828547 2017] [:error] [pid 5878] [client 127.0.0.1:55748] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:49:06.828553 2017] [:error] [pid 5878] [client 127.0.0.1:55748] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:49:07.207929 2017] [:error] [pid 5878] [client 127.0.0.1:55748] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:50:13.239850 2017] [:error] [pid 17341] [client 127.0.0.1:56200] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:50:13.244292 2017] [:error] [pid 17341] [client 127.0.0.1:56200] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:50:13.244318 2017] [:error] [pid 17341] [client 127.0.0.1:56200] PHP Stack trace:
+[Fri Dec 15 14:50:13.244326 2017] [:error] [pid 17341] [client 127.0.0.1:56200] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:50:13.244331 2017] [:error] [pid 17341] [client 127.0.0.1:56200] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:50:13.261945 2017] [:error] [pid 17341] [client 127.0.0.1:56200] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:51:46.819699 2017] [:error] [pid 5877] [client 127.0.0.1:56964] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:51:46.897282 2017] [:error] [pid 5877] [client 127.0.0.1:56964] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:52:20.318312 2017] [:error] [pid 5949] [client 127.0.0.1:57240] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:52:20.318336 2017] [:error] [pid 5949] [client 127.0.0.1:57240] PHP Stack trace:
+[Fri Dec 15 14:52:20.318344 2017] [:error] [pid 5949] [client 127.0.0.1:57240] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:52:20.318349 2017] [:error] [pid 5949] [client 127.0.0.1:57240] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:52:20.336398 2017] [:error] [pid 5949] [client 127.0.0.1:57240] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:52:24.865083 2017] [:error] [pid 5949] [client 127.0.0.1:57240] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:52:24.865110 2017] [:error] [pid 5949] [client 127.0.0.1:57240] PHP Stack trace:
+[Fri Dec 15 14:52:24.865120 2017] [:error] [pid 5949] [client 127.0.0.1:57240] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:52:24.865125 2017] [:error] [pid 5949] [client 127.0.0.1:57240] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:52:25.101216 2017] [:error] [pid 5949] [client 127.0.0.1:57240] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:52:39.852651 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:52:39.852680 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Stack trace:
+[Fri Dec 15 14:52:39.852688 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:52:39.852694 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:52:39.982096 2017] [:error] [pid 18190] [client 127.0.0.1:57420] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:52:41.741244 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:52:41.741262 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Stack trace:
+[Fri Dec 15 14:52:41.741270 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:52:41.741276 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:52:41.867099 2017] [:error] [pid 18190] [client 127.0.0.1:57420] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:52:42.945581 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:52:42.945610 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Stack trace:
+[Fri Dec 15 14:52:42.945620 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:52:42.945626 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:52:43.029567 2017] [:error] [pid 18190] [client 127.0.0.1:57420] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:52:44.520480 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:52:44.520504 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Stack trace:
+[Fri Dec 15 14:52:44.520511 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:52:44.520517 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:52:44.577849 2017] [:error] [pid 18190] [client 127.0.0.1:57420] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:52:45.502716 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:52:45.502751 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Stack trace:
+[Fri Dec 15 14:52:45.502760 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:52:45.502766 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:52:45.592192 2017] [:error] [pid 18190] [client 127.0.0.1:57420] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:52:46.703603 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:52:46.703624 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP Stack trace:
+[Fri Dec 15 14:52:46.703631 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:52:46.703637 2017] [:error] [pid 18190] [client 127.0.0.1:57420] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:52:46.835030 2017] [:error] [pid 18190] [client 127.0.0.1:57420] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:57:17.912895 2017] [:error] [pid 5878] [client 127.0.0.1:59702] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:57:17.952814 2017] [:error] [pid 5878] [client 127.0.0.1:59702] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:57:21.357725 2017] [:error] [pid 5878] [client 127.0.0.1:59702] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:57:21.357753 2017] [:error] [pid 5878] [client 127.0.0.1:59702] PHP Stack trace:
+[Fri Dec 15 14:57:21.357761 2017] [:error] [pid 5878] [client 127.0.0.1:59702] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:57:21.357766 2017] [:error] [pid 5878] [client 127.0.0.1:59702] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:57:21.537949 2017] [:error] [pid 5878] [client 127.0.0.1:59702] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:00.037979 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:00.083683 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:01.400045 2017] [:error] [pid 5949] [client 127.0.0.1:60060] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:58:01.400060 2017] [:error] [pid 5949] [client 127.0.0.1:60060] PHP Stack trace:
+[Fri Dec 15 14:58:01.400069 2017] [:error] [pid 5949] [client 127.0.0.1:60060] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:58:01.400075 2017] [:error] [pid 5949] [client 127.0.0.1:60060] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:58:01.453242 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:03.232452 2017] [:error] [pid 5949] [client 127.0.0.1:60060] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:58:03.232473 2017] [:error] [pid 5949] [client 127.0.0.1:60060] PHP Stack trace:
+[Fri Dec 15 14:58:03.232481 2017] [:error] [pid 5949] [client 127.0.0.1:60060] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:58:03.232487 2017] [:error] [pid 5949] [client 127.0.0.1:60060] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:58:03.361852 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:12.187572 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:12.192384 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:13.757847 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:21.119651 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:23.726340 2017] [:error] [pid 5949] [client 127.0.0.1:60060] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:44.567341 2017] [:error] [pid 18190] [client 127.0.0.1:60480] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:44.645738 2017] [:error] [pid 18190] [client 127.0.0.1:60480] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:58:47.877310 2017] [:error] [pid 18190] [client 127.0.0.1:60480] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:58:47.877324 2017] [:error] [pid 18190] [client 127.0.0.1:60480] PHP Stack trace:
+[Fri Dec 15 14:58:47.877340 2017] [:error] [pid 18190] [client 127.0.0.1:60480] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:58:47.877347 2017] [:error] [pid 18190] [client 127.0.0.1:60480] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:58:47.923885 2017] [:error] [pid 18190] [client 127.0.0.1:60480] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:59:22.477735 2017] [:error] [pid 17341] [client 127.0.0.1:60810] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:59:22.536511 2017] [:error] [pid 17341] [client 127.0.0.1:60810] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:59:46.622894 2017] [:error] [pid 17849] [client 127.0.0.1:32778] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:59:46.675826 2017] [:error] [pid 17849] [client 127.0.0.1:32778] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:59:51.666641 2017] [:error] [pid 17849] [client 127.0.0.1:32778] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:59:51.666663 2017] [:error] [pid 17849] [client 127.0.0.1:32778] PHP Stack trace:
+[Fri Dec 15 14:59:51.666670 2017] [:error] [pid 17849] [client 127.0.0.1:32778] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:59:51.666676 2017] [:error] [pid 17849] [client 127.0.0.1:32778] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:59:51.699300 2017] [:error] [pid 17849] [client 127.0.0.1:32778] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 14:59:54.965800 2017] [:error] [pid 17849] [client 127.0.0.1:32778] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 14:59:54.965820 2017] [:error] [pid 17849] [client 127.0.0.1:32778] PHP Stack trace:
+[Fri Dec 15 14:59:54.965828 2017] [:error] [pid 17849] [client 127.0.0.1:32778] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 14:59:54.965834 2017] [:error] [pid 17849] [client 127.0.0.1:32778] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 14:59:54.969364 2017] [:error] [pid 17849] [client 127.0.0.1:32778] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:22.715039 2017] [:error] [pid 5878] [client 127.0.0.1:33102] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:22.782699 2017] [:error] [pid 5878] [client 127.0.0.1:33102] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:22.894636 2017] [:error] [pid 5922] [client 127.0.0.1:33098] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:22.959357 2017] [:error] [pid 5922] [client 127.0.0.1:33098] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:26.435909 2017] [:error] [pid 5922] [client 127.0.0.1:33098] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:00:26.435928 2017] [:error] [pid 5922] [client 127.0.0.1:33098] PHP Stack trace:
+[Fri Dec 15 15:00:26.435935 2017] [:error] [pid 5922] [client 127.0.0.1:33098] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:00:26.435941 2017] [:error] [pid 5922] [client 127.0.0.1:33098] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:00:26.507332 2017] [:error] [pid 5922] [client 127.0.0.1:33098] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:38.868936 2017] [:error] [pid 5877] [client 127.0.0.1:33262] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:38.900304 2017] [:error] [pid 5877] [client 127.0.0.1:33262] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:42.072043 2017] [:error] [pid 5877] [client 127.0.0.1:33262] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:00:42.072065 2017] [:error] [pid 5877] [client 127.0.0.1:33262] PHP Stack trace:
+[Fri Dec 15 15:00:42.072074 2017] [:error] [pid 5877] [client 127.0.0.1:33262] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:00:42.072079 2017] [:error] [pid 5877] [client 127.0.0.1:33262] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:00:42.128681 2017] [:error] [pid 5877] [client 127.0.0.1:33262] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:53.053457 2017] [:error] [pid 17341] [client 127.0.0.1:33390] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:53.130528 2017] [:error] [pid 17341] [client 127.0.0.1:33390] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:54.346243 2017] [:error] [pid 17341] [client 127.0.0.1:33390] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:00:54.346265 2017] [:error] [pid 17341] [client 127.0.0.1:33390] PHP Stack trace:
+[Fri Dec 15 15:00:54.346272 2017] [:error] [pid 17341] [client 127.0.0.1:33390] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:00:54.346278 2017] [:error] [pid 17341] [client 127.0.0.1:33390] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:00:54.511001 2017] [:error] [pid 17341] [client 127.0.0.1:33390] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:00:57.623422 2017] [:error] [pid 17341] [client 127.0.0.1:33390] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:00:57.623443 2017] [:error] [pid 17341] [client 127.0.0.1:33390] PHP Stack trace:
+[Fri Dec 15 15:00:57.623451 2017] [:error] [pid 17341] [client 127.0.0.1:33390] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:00:57.623456 2017] [:error] [pid 17341] [client 127.0.0.1:33390] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:00:57.630070 2017] [:error] [pid 17341] [client 127.0.0.1:33390] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:01:12.710800 2017] [:error] [pid 5896] [client 127.0.0.1:33578] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:01:12.771921 2017] [:error] [pid 5896] [client 127.0.0.1:33578] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:01:16.296328 2017] [:error] [pid 5896] [client 127.0.0.1:33578] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:01:16.296344 2017] [:error] [pid 5896] [client 127.0.0.1:33578] PHP Stack trace:
+[Fri Dec 15 15:01:16.296352 2017] [:error] [pid 5896] [client 127.0.0.1:33578] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:01:16.296363 2017] [:error] [pid 5896] [client 127.0.0.1:33578] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:01:16.449576 2017] [:error] [pid 5896] [client 127.0.0.1:33578] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:01:39.754350 2017] [:error] [pid 18694] [client 127.0.0.1:33822] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:01:39.759066 2017] [:error] [pid 18694] [client 127.0.0.1:33822] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:01:40.921154 2017] [:error] [pid 18694] [client 127.0.0.1:33822] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:01:40.921180 2017] [:error] [pid 18694] [client 127.0.0.1:33822] PHP Stack trace:
+[Fri Dec 15 15:01:40.921187 2017] [:error] [pid 18694] [client 127.0.0.1:33822] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:01:40.921193 2017] [:error] [pid 18694] [client 127.0.0.1:33822] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:01:41.017562 2017] [:error] [pid 18694] [client 127.0.0.1:33822] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:01:43.866519 2017] [:error] [pid 18694] [client 127.0.0.1:33822] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:01:43.866538 2017] [:error] [pid 18694] [client 127.0.0.1:33822] PHP Stack trace:
+[Fri Dec 15 15:01:43.866547 2017] [:error] [pid 18694] [client 127.0.0.1:33822] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:01:43.866554 2017] [:error] [pid 18694] [client 127.0.0.1:33822] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:01:43.872575 2017] [:error] [pid 18694] [client 127.0.0.1:33822] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:02.239140 2017] [:error] [pid 18190] [client 127.0.0.1:34026] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:02.247235 2017] [:error] [pid 18190] [client 127.0.0.1:34026] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:03.983026 2017] [:error] [pid 18190] [client 127.0.0.1:34026] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:02:03.983042 2017] [:error] [pid 18190] [client 127.0.0.1:34026] PHP Stack trace:
+[Fri Dec 15 15:02:03.983049 2017] [:error] [pid 18190] [client 127.0.0.1:34026] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:02:03.983055 2017] [:error] [pid 18190] [client 127.0.0.1:34026] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:02:04.126756 2017] [:error] [pid 18190] [client 127.0.0.1:34026] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:07.712634 2017] [:error] [pid 18190] [client 127.0.0.1:34026] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:02:07.712653 2017] [:error] [pid 18190] [client 127.0.0.1:34026] PHP Stack trace:
+[Fri Dec 15 15:02:07.712661 2017] [:error] [pid 18190] [client 127.0.0.1:34026] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:02:07.712667 2017] [:error] [pid 18190] [client 127.0.0.1:34026] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:02:07.860355 2017] [:error] [pid 18190] [client 127.0.0.1:34026] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:38.960219 2017] [:error] [pid 5922] [client 127.0.0.1:34352] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:38.983457 2017] [:error] [pid 5922] [client 127.0.0.1:34352] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:41.611138 2017] [:error] [pid 5922] [client 127.0.0.1:34352] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:02:41.611155 2017] [:error] [pid 5922] [client 127.0.0.1:34352] PHP Stack trace:
+[Fri Dec 15 15:02:41.611163 2017] [:error] [pid 5922] [client 127.0.0.1:34352] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:02:41.611169 2017] [:error] [pid 5922] [client 127.0.0.1:34352] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:02:41.795245 2017] [:error] [pid 5922] [client 127.0.0.1:34352] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:53.351708 2017] [:error] [pid 19240] [client 127.0.0.1:34480] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:53.352984 2017] [:error] [pid 19240] [client 127.0.0.1:34480] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:02:54.427948 2017] [:error] [pid 19240] [client 127.0.0.1:34480] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:02:54.427975 2017] [:error] [pid 19240] [client 127.0.0.1:34480] PHP Stack trace:
+[Fri Dec 15 15:02:54.427986 2017] [:error] [pid 19240] [client 127.0.0.1:34480] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:02:54.427992 2017] [:error] [pid 19240] [client 127.0.0.1:34480] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:02:54.476356 2017] [:error] [pid 19240] [client 127.0.0.1:34480] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:03:17.473880 2017] [:error] [pid 5896] [client 127.0.0.1:34708] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:03:17.540898 2017] [:error] [pid 5896] [client 127.0.0.1:34708] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:03:20.205975 2017] [:error] [pid 5896] [client 127.0.0.1:34708] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:03:20.205993 2017] [:error] [pid 5896] [client 127.0.0.1:34708] PHP Stack trace:
+[Fri Dec 15 15:03:20.206001 2017] [:error] [pid 5896] [client 127.0.0.1:34708] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:03:20.206007 2017] [:error] [pid 5896] [client 127.0.0.1:34708] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:03:20.335830 2017] [:error] [pid 5896] [client 127.0.0.1:34708] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:03:34.997646 2017] [:error] [pid 19192] [client 127.0.0.1:34882] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:03:35.009345 2017] [:error] [pid 19192] [client 127.0.0.1:34882] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:04:19.976569 2017] [:error] [pid 19427] [client 127.0.0.1:35258] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:04:19.979119 2017] [:error] [pid 19427] [client 127.0.0.1:35258] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:15.270013 2017] [:error] [pid 8711] [client 127.0.0.1:35728] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:15.328808 2017] [:error] [pid 8711] [client 127.0.0.1:35728] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:16.154998 2017] [:error] [pid 19427] [client 127.0.0.1:35730] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:16.214413 2017] [:error] [pid 19427] [client 127.0.0.1:35730] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:17.433488 2017] [:error] [pid 19427] [client 127.0.0.1:35730] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:05:17.433512 2017] [:error] [pid 19427] [client 127.0.0.1:35730] PHP Stack trace:
+[Fri Dec 15 15:05:17.433520 2017] [:error] [pid 19427] [client 127.0.0.1:35730] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:05:17.433526 2017] [:error] [pid 19427] [client 127.0.0.1:35730] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:05:17.609142 2017] [:error] [pid 19427] [client 127.0.0.1:35730] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:22.083361 2017] [:error] [pid 19427] [client 127.0.0.1:35730] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:05:22.083377 2017] [:error] [pid 19427] [client 127.0.0.1:35730] PHP Stack trace:
+[Fri Dec 15 15:05:22.083384 2017] [:error] [pid 19427] [client 127.0.0.1:35730] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:05:22.083391 2017] [:error] [pid 19427] [client 127.0.0.1:35730] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:05:22.235222 2017] [:error] [pid 19427] [client 127.0.0.1:35730] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:41.394512 2017] [:error] [pid 19038] [client 127.0.0.1:35964] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:41.411014 2017] [:error] [pid 19038] [client 127.0.0.1:35964] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:44.262020 2017] [:error] [pid 19038] [client 127.0.0.1:35964] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:05:44.262043 2017] [:error] [pid 19038] [client 127.0.0.1:35964] PHP Stack trace:
+[Fri Dec 15 15:05:44.262050 2017] [:error] [pid 19038] [client 127.0.0.1:35964] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:05:44.262057 2017] [:error] [pid 19038] [client 127.0.0.1:35964] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:05:44.416151 2017] [:error] [pid 19038] [client 127.0.0.1:35964] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:54.524317 2017] [:error] [pid 19427] [client 127.0.0.1:36098] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:54.591383 2017] [:error] [pid 19427] [client 127.0.0.1:36098] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:05:57.452947 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:05:57.452968 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP Stack trace:
+[Fri Dec 15 15:05:57.452975 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:05:57.452980 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:05:57.607416 2017] [:error] [pid 19427] [client 127.0.0.1:36098] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:06:00.729873 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:06:00.729888 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP Stack trace:
+[Fri Dec 15 15:06:00.729894 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:06:00.729900 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:06:00.966748 2017] [:error] [pid 19427] [client 127.0.0.1:36098] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:06:03.571791 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:06:03.571820 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP Stack trace:
+[Fri Dec 15 15:06:03.571828 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:06:03.571855 2017] [:error] [pid 19427] [client 127.0.0.1:36098] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:06:03.723052 2017] [:error] [pid 19427] [client 127.0.0.1:36098] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:06:28.643799 2017] [:error] [pid 5922] [client 127.0.0.1:36398] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:06:28.664122 2017] [:error] [pid 5922] [client 127.0.0.1:36398] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:06:31.378556 2017] [:error] [pid 5922] [client 127.0.0.1:36398] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:06:31.378574 2017] [:error] [pid 5922] [client 127.0.0.1:36398] PHP Stack trace:
+[Fri Dec 15 15:06:31.378582 2017] [:error] [pid 5922] [client 127.0.0.1:36398] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:06:31.378588 2017] [:error] [pid 5922] [client 127.0.0.1:36398] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:06:31.500959 2017] [:error] [pid 5922] [client 127.0.0.1:36398] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:06:47.349474 2017] [:error] [pid 19685] [client 127.0.0.1:36576] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:06:47.352271 2017] [:error] [pid 19685] [client 127.0.0.1:36576] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:06:49.943018 2017] [:error] [pid 19685] [client 127.0.0.1:36576] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:06:49.943047 2017] [:error] [pid 19685] [client 127.0.0.1:36576] PHP Stack trace:
+[Fri Dec 15 15:06:49.943054 2017] [:error] [pid 19685] [client 127.0.0.1:36576] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:06:49.943060 2017] [:error] [pid 19685] [client 127.0.0.1:36576] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:06:50.005590 2017] [:error] [pid 19685] [client 127.0.0.1:36576] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:07:19.086432 2017] [:error] [pid 19800] [client 127.0.0.1:36848] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:07:19.091594 2017] [:error] [pid 19800] [client 127.0.0.1:36848] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:07:24.742410 2017] [:error] [pid 19800] [client 127.0.0.1:36848] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:07:24.742433 2017] [:error] [pid 19800] [client 127.0.0.1:36848] PHP Stack trace:
+[Fri Dec 15 15:07:24.742440 2017] [:error] [pid 19800] [client 127.0.0.1:36848] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:07:24.742446 2017] [:error] [pid 19800] [client 127.0.0.1:36848] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:07:24.892176 2017] [:error] [pid 19800] [client 127.0.0.1:36848] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:07:30.625865 2017] [:error] [pid 19800] [client 127.0.0.1:36848] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:07:30.625882 2017] [:error] [pid 19800] [client 127.0.0.1:36848] PHP Stack trace:
+[Fri Dec 15 15:07:30.625889 2017] [:error] [pid 19800] [client 127.0.0.1:36848] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:07:30.625895 2017] [:error] [pid 19800] [client 127.0.0.1:36848] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:07:30.770217 2017] [:error] [pid 19800] [client 127.0.0.1:36848] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:07:48.992155 2017] [:error] [pid 19427] [client 127.0.0.1:37114] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:07:48.992173 2017] [:error] [pid 19427] [client 127.0.0.1:37114] PHP Stack trace:
+[Fri Dec 15 15:07:48.992181 2017] [:error] [pid 19427] [client 127.0.0.1:37114] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:07:48.992187 2017] [:error] [pid 19427] [client 127.0.0.1:37114] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:07:49.020318 2017] [:error] [pid 19427] [client 127.0.0.1:37114] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:08:56.428988 2017] [:error] [pid 19946] [client 127.0.0.1:37670] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:08:56.499137 2017] [:error] [pid 19946] [client 127.0.0.1:37670] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:08:57.677641 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:08:57.677663 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP Stack trace:
+[Fri Dec 15 15:08:57.677670 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:08:57.677676 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:08:57.865644 2017] [:error] [pid 19946] [client 127.0.0.1:37670] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:09:00.525208 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:09:00.525224 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP Stack trace:
+[Fri Dec 15 15:09:00.525231 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:09:00.525237 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:09:00.657131 2017] [:error] [pid 19946] [client 127.0.0.1:37670] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:09:04.456371 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:09:04.456389 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP Stack trace:
+[Fri Dec 15 15:09:04.456395 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:09:04.456401 2017] [:error] [pid 19946] [client 127.0.0.1:37670] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:09:04.594324 2017] [:error] [pid 19946] [client 127.0.0.1:37670] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:09:36.396295 2017] [:error] [pid 19192] [client 127.0.0.1:38028] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:09:36.424471 2017] [:error] [pid 19192] [client 127.0.0.1:38028] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:09:37.481941 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:09:37.481979 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP Stack trace:
+[Fri Dec 15 15:09:37.481988 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:09:37.481994 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:09:37.615816 2017] [:error] [pid 19192] [client 127.0.0.1:38028] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:09:42.445460 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:09:42.445482 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP Stack trace:
+[Fri Dec 15 15:09:42.445489 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:09:42.445495 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:09:42.552602 2017] [:error] [pid 19192] [client 127.0.0.1:38028] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:09:44.705781 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:09:44.705797 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP Stack trace:
+[Fri Dec 15 15:09:44.705804 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:09:44.705809 2017] [:error] [pid 19192] [client 127.0.0.1:38028] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:09:44.926313 2017] [:error] [pid 19192] [client 127.0.0.1:38028] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:10:00.108507 2017] [:error] [pid 19946] [client 127.0.0.1:38246] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:10:00.160513 2017] [:error] [pid 19946] [client 127.0.0.1:38246] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:10:15.154726 2017] [:error] [pid 19192] [client 127.0.0.1:38382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:10:15.197049 2017] [:error] [pid 19192] [client 127.0.0.1:38382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:10:24.287159 2017] [:error] [pid 19368] [client 127.0.0.1:38466] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:10:24.287391 2017] [:error] [pid 20269] [client 127.0.0.1:38458] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:03.252338 2017] [:error] [pid 20373] [client 127.0.0.1:38800] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:03.366529 2017] [:error] [pid 20373] [client 127.0.0.1:38800] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:05.865874 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:11:05.865892 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP Stack trace:
+[Fri Dec 15 15:11:05.865899 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:11:05.865905 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:11:05.889527 2017] [:error] [pid 20373] [client 127.0.0.1:38800] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:10.689749 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:11:10.689763 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP Stack trace:
+[Fri Dec 15 15:11:10.689771 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:11:10.689777 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:11:10.745221 2017] [:error] [pid 20373] [client 127.0.0.1:38800] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:12.974664 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:11:12.974684 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP Stack trace:
+[Fri Dec 15 15:11:12.974691 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:11:12.974697 2017] [:error] [pid 20373] [client 127.0.0.1:38800] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:11:13.048171 2017] [:error] [pid 20373] [client 127.0.0.1:38800] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:25.357166 2017] [:error] [pid 19038] [client 127.0.0.1:39002] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:25.427263 2017] [:error] [pid 19038] [client 127.0.0.1:39002] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:27.769203 2017] [:error] [pid 19038] [client 127.0.0.1:39002] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:11:27.769217 2017] [:error] [pid 19038] [client 127.0.0.1:39002] PHP Stack trace:
+[Fri Dec 15 15:11:27.769224 2017] [:error] [pid 19038] [client 127.0.0.1:39002] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:11:27.769230 2017] [:error] [pid 19038] [client 127.0.0.1:39002] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:11:27.833493 2017] [:error] [pid 19038] [client 127.0.0.1:39002] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:43.737203 2017] [:error] [pid 20269] [client 127.0.0.1:39168] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:43.738865 2017] [:error] [pid 20269] [client 127.0.0.1:39168] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:44.832165 2017] [:error] [pid 20269] [client 127.0.0.1:39168] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:11:44.832188 2017] [:error] [pid 20269] [client 127.0.0.1:39168] PHP Stack trace:
+[Fri Dec 15 15:11:44.832195 2017] [:error] [pid 20269] [client 127.0.0.1:39168] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:11:44.832201 2017] [:error] [pid 20269] [client 127.0.0.1:39168] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:11:44.891958 2017] [:error] [pid 20269] [client 127.0.0.1:39168] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:49.312976 2017] [:error] [pid 20269] [client 127.0.0.1:39168] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:11:49.312995 2017] [:error] [pid 20269] [client 127.0.0.1:39168] PHP Stack trace:
+[Fri Dec 15 15:11:49.313003 2017] [:error] [pid 20269] [client 127.0.0.1:39168] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:11:49.313009 2017] [:error] [pid 20269] [client 127.0.0.1:39168] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:11:49.405621 2017] [:error] [pid 20269] [client 127.0.0.1:39168] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:11:49.744923 2017] [:error] [pid 19685] [client 127.0.0.1:39238] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:11:49.744941 2017] [:error] [pid 19685] [client 127.0.0.1:39238] PHP Stack trace:
+[Fri Dec 15 15:11:49.744948 2017] [:error] [pid 19685] [client 127.0.0.1:39238] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:11:49.744954 2017] [:error] [pid 19685] [client 127.0.0.1:39238] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:11:49.813807 2017] [:error] [pid 19685] [client 127.0.0.1:39238] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:10.859216 2017] [:error] [pid 20220] [client 127.0.0.1:39426] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:10.913392 2017] [:error] [pid 20220] [client 127.0.0.1:39426] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:13.436628 2017] [:error] [pid 20220] [client 127.0.0.1:39426] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:12:13.436657 2017] [:error] [pid 20220] [client 127.0.0.1:39426] PHP Stack trace:
+[Fri Dec 15 15:12:13.436664 2017] [:error] [pid 20220] [client 127.0.0.1:39426] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:12:13.436670 2017] [:error] [pid 20220] [client 127.0.0.1:39426] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:12:13.463182 2017] [:error] [pid 20220] [client 127.0.0.1:39426] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:17.329851 2017] [:error] [pid 20220] [client 127.0.0.1:39426] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:12:17.329887 2017] [:error] [pid 20220] [client 127.0.0.1:39426] PHP Stack trace:
+[Fri Dec 15 15:12:17.329895 2017] [:error] [pid 20220] [client 127.0.0.1:39426] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:12:17.329902 2017] [:error] [pid 20220] [client 127.0.0.1:39426] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:12:17.451360 2017] [:error] [pid 20220] [client 127.0.0.1:39426] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:27.001991 2017] [:error] [pid 19192] [client 127.0.0.1:39580] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:27.052157 2017] [:error] [pid 19192] [client 127.0.0.1:39580] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:30.702572 2017] [:error] [pid 19192] [client 127.0.0.1:39580] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:12:30.702591 2017] [:error] [pid 19192] [client 127.0.0.1:39580] PHP Stack trace:
+[Fri Dec 15 15:12:30.702599 2017] [:error] [pid 19192] [client 127.0.0.1:39580] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:12:30.702605 2017] [:error] [pid 19192] [client 127.0.0.1:39580] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:12:30.834396 2017] [:error] [pid 19192] [client 127.0.0.1:39580] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:38.389700 2017] [:error] [pid 19192] [client 127.0.0.1:39580] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:12:38.389719 2017] [:error] [pid 19192] [client 127.0.0.1:39580] PHP Stack trace:
+[Fri Dec 15 15:12:38.389726 2017] [:error] [pid 19192] [client 127.0.0.1:39580] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:12:38.389732 2017] [:error] [pid 19192] [client 127.0.0.1:39580] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:12:38.580824 2017] [:error] [pid 19192] [client 127.0.0.1:39580] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:46.696197 2017] [:error] [pid 20373] [client 127.0.0.1:39768] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:46.700071 2017] [:error] [pid 20373] [client 127.0.0.1:39768] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:12:49.765801 2017] [:error] [pid 20373] [client 127.0.0.1:39768] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:12:49.765824 2017] [:error] [pid 20373] [client 127.0.0.1:39768] PHP Stack trace:
+[Fri Dec 15 15:12:49.765832 2017] [:error] [pid 20373] [client 127.0.0.1:39768] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:12:49.765838 2017] [:error] [pid 20373] [client 127.0.0.1:39768] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:12:49.774800 2017] [:error] [pid 20373] [client 127.0.0.1:39768] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:14:08.019170 2017] [:error] [pid 19192] [client 127.0.0.1:40444] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:14:08.089262 2017] [:error] [pid 19192] [client 127.0.0.1:40444] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:14:11.268557 2017] [:error] [pid 19192] [client 127.0.0.1:40444] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:14:11.268580 2017] [:error] [pid 19192] [client 127.0.0.1:40444] PHP Stack trace:
+[Fri Dec 15 15:14:11.268588 2017] [:error] [pid 19192] [client 127.0.0.1:40444] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:14:11.268594 2017] [:error] [pid 19192] [client 127.0.0.1:40444] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:14:11.320690 2017] [:error] [pid 19192] [client 127.0.0.1:40444] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:14:30.323557 2017] [:error] [pid 19368] [client 127.0.0.1:40646] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:14:30.414861 2017] [:error] [pid 19368] [client 127.0.0.1:40646] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:14:34.578070 2017] [:error] [pid 19368] [client 127.0.0.1:40646] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:14:34.578099 2017] [:error] [pid 19368] [client 127.0.0.1:40646] PHP Stack trace:
+[Fri Dec 15 15:14:34.578107 2017] [:error] [pid 19368] [client 127.0.0.1:40646] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:14:34.578113 2017] [:error] [pid 19368] [client 127.0.0.1:40646] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:14:34.622559 2017] [:error] [pid 19368] [client 127.0.0.1:40646] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:14:56.652513 2017] [:error] [pid 19639] [client 127.0.0.1:40884] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:14:56.692542 2017] [:error] [pid 19639] [client 127.0.0.1:40884] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:00.374272 2017] [:error] [pid 19639] [client 127.0.0.1:40884] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:15:00.374296 2017] [:error] [pid 19639] [client 127.0.0.1:40884] PHP Stack trace:
+[Fri Dec 15 15:15:00.374303 2017] [:error] [pid 19639] [client 127.0.0.1:40884] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:15:00.374309 2017] [:error] [pid 19639] [client 127.0.0.1:40884] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:15:00.394367 2017] [:error] [pid 19639] [client 127.0.0.1:40884] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:10.816697 2017] [:error] [pid 20373] [client 127.0.0.1:41010] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:10.817532 2017] [:error] [pid 5877] [client 127.0.0.1:41018] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:14.177164 2017] [:error] [pid 5877] [client 127.0.0.1:41018] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:15:14.177181 2017] [:error] [pid 5877] [client 127.0.0.1:41018] PHP Stack trace:
+[Fri Dec 15 15:15:14.177189 2017] [:error] [pid 5877] [client 127.0.0.1:41018] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:15:14.177194 2017] [:error] [pid 5877] [client 127.0.0.1:41018] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:15:14.370056 2017] [:error] [pid 5877] [client 127.0.0.1:41018] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:38.426173 2017] [:error] [pid 19639] [client 127.0.0.1:41266] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:38.478185 2017] [:error] [pid 19639] [client 127.0.0.1:41266] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:42.766831 2017] [:error] [pid 19639] [client 127.0.0.1:41266] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:15:42.766844 2017] [:error] [pid 19639] [client 127.0.0.1:41266] PHP Stack trace:
+[Fri Dec 15 15:15:42.766851 2017] [:error] [pid 19639] [client 127.0.0.1:41266] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:15:42.766858 2017] [:error] [pid 19639] [client 127.0.0.1:41266] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:15:42.900255 2017] [:error] [pid 19639] [client 127.0.0.1:41266] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:49.425797 2017] [:error] [pid 19639] [client 127.0.0.1:41266] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:15:49.425814 2017] [:error] [pid 19639] [client 127.0.0.1:41266] PHP Stack trace:
+[Fri Dec 15 15:15:49.425822 2017] [:error] [pid 19639] [client 127.0.0.1:41266] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:15:49.425828 2017] [:error] [pid 19639] [client 127.0.0.1:41266] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:15:49.540438 2017] [:error] [pid 19639] [client 127.0.0.1:41266] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:56.767172 2017] [:error] [pid 19192] [client 127.0.0.1:41438] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:15:56.800353 2017] [:error] [pid 19192] [client 127.0.0.1:41438] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:16:01.283583 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:16:01.283604 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP Stack trace:
+[Fri Dec 15 15:16:01.283611 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:16:01.283617 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:16:01.420095 2017] [:error] [pid 19192] [client 127.0.0.1:41438] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:16:03.997065 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:16:03.997083 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP Stack trace:
+[Fri Dec 15 15:16:03.997090 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:16:03.997096 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:16:04.002510 2017] [:error] [pid 19192] [client 127.0.0.1:41438] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:16:06.577712 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:16:06.577731 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP Stack trace:
+[Fri Dec 15 15:16:06.577739 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:16:06.577745 2017] [:error] [pid 19192] [client 127.0.0.1:41438] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:16:06.599492 2017] [:error] [pid 19192] [client 127.0.0.1:41438] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:16:24.984197 2017] [:error] [pid 19800] [client 127.0.0.1:41692] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:16:24.985657 2017] [:error] [pid 19800] [client 127.0.0.1:41692] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:16:30.643738 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:16:30.643755 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP Stack trace:
+[Fri Dec 15 15:16:30.643763 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:16:30.643769 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:16:30.801733 2017] [:error] [pid 19800] [client 127.0.0.1:41692] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:16:32.996424 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:16:32.996442 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP Stack trace:
+[Fri Dec 15 15:16:32.996449 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:16:32.996455 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:16:33.218009 2017] [:error] [pid 19800] [client 127.0.0.1:41692] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:16:35.510263 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:16:35.510281 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP Stack trace:
+[Fri Dec 15 15:16:35.510288 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:16:35.510294 2017] [:error] [pid 19800] [client 127.0.0.1:41692] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:16:35.528822 2017] [:error] [pid 19800] [client 127.0.0.1:41692] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:11.686227 2017] [:error] [pid 21018] [client 127.0.0.1:42100] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:11.698952 2017] [:error] [pid 21018] [client 127.0.0.1:42100] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:14.560687 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:17:14.560718 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP Stack trace:
+[Fri Dec 15 15:17:14.560725 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:17:14.560732 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:17:14.679196 2017] [:error] [pid 21018] [client 127.0.0.1:42100] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:18.372817 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:17:18.372838 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP Stack trace:
+[Fri Dec 15 15:17:18.372847 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:17:18.372853 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:17:18.516310 2017] [:error] [pid 21018] [client 127.0.0.1:42100] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:22.345936 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:17:22.345959 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP Stack trace:
+[Fri Dec 15 15:17:22.345967 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:17:22.345973 2017] [:error] [pid 21018] [client 127.0.0.1:42100] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:17:22.580345 2017] [:error] [pid 21018] [client 127.0.0.1:42100] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:41.745213 2017] [:error] [pid 20269] [client 127.0.0.1:42382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:41.829753 2017] [:error] [pid 20269] [client 127.0.0.1:42382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:46.898927 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:17:46.898945 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Stack trace:
+[Fri Dec 15 15:17:46.898952 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:17:46.898958 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:17:47.074011 2017] [:error] [pid 20269] [client 127.0.0.1:42382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:50.399767 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:17:50.399783 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Stack trace:
+[Fri Dec 15 15:17:50.399790 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:17:50.399796 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:17:50.560698 2017] [:error] [pid 20269] [client 127.0.0.1:42382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:53.686379 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:17:53.686400 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Stack trace:
+[Fri Dec 15 15:17:53.686407 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:17:53.686413 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:17:53.757152 2017] [:error] [pid 20269] [client 127.0.0.1:42382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:55.881168 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:17:55.881187 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Stack trace:
+[Fri Dec 15 15:17:55.881194 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:17:55.881200 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:17:56.002833 2017] [:error] [pid 20269] [client 127.0.0.1:42382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:17:58.129316 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:17:58.129334 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP Stack trace:
+[Fri Dec 15 15:17:58.129342 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:17:58.129348 2017] [:error] [pid 20269] [client 127.0.0.1:42382] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:17:58.250285 2017] [:error] [pid 20269] [client 127.0.0.1:42382] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:19:28.565986 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:19:28.566005 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP Stack trace:
+[Fri Dec 15 15:19:28.566013 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:19:28.566019 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:19:28.740416 2017] [:error] [pid 19368] [client 127.0.0.1:43282] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:19:30.959079 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:19:30.959101 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP Stack trace:
+[Fri Dec 15 15:19:30.959108 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:19:30.959114 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:19:31.154197 2017] [:error] [pid 19368] [client 127.0.0.1:43282] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:19:34.092745 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:19:34.092769 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP Stack trace:
+[Fri Dec 15 15:19:34.092776 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:19:34.092782 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:19:34.253634 2017] [:error] [pid 19368] [client 127.0.0.1:43282] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:19:35.865307 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:19:35.865325 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP Stack trace:
+[Fri Dec 15 15:19:35.865333 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:19:35.865339 2017] [:error] [pid 19368] [client 127.0.0.1:43282] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:19:36.072169 2017] [:error] [pid 19368] [client 127.0.0.1:43282] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:20:06.009976 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:20:06.009995 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP Stack trace:
+[Fri Dec 15 15:20:06.010003 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:20:06.010009 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:20:06.201203 2017] [:error] [pid 20373] [client 127.0.0.1:43596] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:20:06.862649 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:20:06.862671 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP Stack trace:
+[Fri Dec 15 15:20:06.862679 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:20:06.862685 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:20:06.940537 2017] [:error] [pid 20373] [client 127.0.0.1:43596] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:20:07.751496 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:20:07.751521 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP Stack trace:
+[Fri Dec 15 15:20:07.751528 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:20:07.751535 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:20:07.822953 2017] [:error] [pid 20373] [client 127.0.0.1:43596] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat
+[Fri Dec 15 15:20:13.417413 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP Warning:  call_user_func_array() expects parameter 1 to be a valid callback, class 'SiteController' does not have a method 'actionIndexcsite' in /home/fyshtey/dev/callcenter/vaddd/components/Router.php on line 75
+[Fri Dec 15 15:20:13.417445 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP Stack trace:
+[Fri Dec 15 15:20:13.417453 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP   1. {main}() /home/fyshtey/dev/callcenter/vaddd/index.php:0
+[Fri Dec 15 15:20:13.417460 2017] [:error] [pid 20373] [client 127.0.0.1:43596] PHP   2. Router->run() /home/fyshtey/dev/callcenter/vaddd/index.php:11
+[Fri Dec 15 15:20:13.560880 2017] [:error] [pid 20373] [client 127.0.0.1:43596] script '/home/fyshtey/dev/callcenter/index.php' not found or unable to stat

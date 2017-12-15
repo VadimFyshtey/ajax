@@ -6,7 +6,7 @@
 
         <?php include_once(ROOT . '/views/layouts/aside.php') ?>
 
-        <div class="col-lg-9 ">
+        <div class="col-lg-9">
             <br/>
             <div id="load"></div>
             <div class="sort1">
@@ -34,6 +34,7 @@
                         </div>
                     </div>
                 <?php endforeach; ?>
+
                 <?php include_once(ROOT . '/views/site/modal.php') ?>
             </div>
             <!-- /.row -->

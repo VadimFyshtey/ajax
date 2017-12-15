@@ -15,7 +15,7 @@ class Product
 
     public static function getProductById($id){
 
-        $db = Db::getInstance()->getConnection();
+        $db = Db::getConnection();
 
         $productList = [];
 
@@ -40,7 +40,7 @@ class Product
 
     public static function getProductList($val = false){
 
-        $db = Db::getInstance()->getConnection();
+        $db = Db::getConnection();
 
         $productList = [];
 
@@ -85,7 +85,7 @@ class Product
 
         if($cat_id){
 
-            $db = Db::getInstance()->getConnection();
+            $db = Db::getConnection();
 
             $products = [];
 

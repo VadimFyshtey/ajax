@@ -1,32 +1,27 @@
 <?php
+
 class Db {
-    private $_connection;
-    private static $_instance;
+    private static $_connection;
 
 
-    public static function getInstance() {
-        if(!self::$_instance) {
-            self::$_instance = new self();
-        }
-        return self::$_instance;
-    }
-    // Constructor
-    private function __construct() {
-        $paramsPath = ROOT . '/config/db_params.php';
-        $params = include($paramsPath);
-        $this->_connection = new mysqli($params['host'], $params['user'],
-            $params['password'], $params['dbname']);
-        $this->_connection->set_charset("utf8");
-        // Error handling
-        if(mysqli_connect_error()) {
-            trigger_error("Failed to connect to MySQL: " . mysqli_connect_error(),
-                E_USER_ERROR);
-        }
-    }
-
+    private function __construct() {}
     private function __clone() { }
 
-    public function getConnection() {
-        return $this->_connection;
+    public static function getConnection() {
+        if(!self::$_connection) {
+            $paramsPath = ROOT . '/config/db_params.php';
+            $params = include($paramsPath);
+            if (!self::$_connection) {
+                self::$_connection = new mysqli($params['host'], $params['user'],
+                    $params['password'], $params['dbname']);
+                mysqli_set_charset(self::$_connection, "utf8");
+            }
+
+            if (mysqli_connect_error()) {
+                trigger_error("Failed to connect to MySQL: " . mysqli_connect_error(),
+                    E_USER_ERROR);
+            }
+        }
+        return self::$_connection;
     }
 }

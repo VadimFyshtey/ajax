@@ -13874,3 +13874,5 @@
 [Tue Dec 12 18:33:52.830354 2017] [:error] [pid 4009] [client 127.0.0.1:44828] PHP Stack trace:, referer: http://callcenter/
 [Tue Dec 12 18:33:52.830364 2017] [:error] [pid 4009] [client 127.0.0.1:44828] PHP   1. {main}() /home/fyshtey/dev/callcenter/index.php:0, referer: http://callcenter/
 [Tue Dec 12 18:33:52.830372 2017] [:error] [pid 4009] [client 127.0.0.1:44828] PHP   2. Router->run() /home/fyshtey/dev/callcenter/index.php:11, referer: http://callcenter/
+[Fri Dec 15 11:17:51.185367 2017] [autoindex:error] [pid 5209] [client 127.0.0.1:58688] AH01276: Cannot serve directory /home/fyshtey/dev/callcenter/vaddd/: No matching DirectoryIndex (index.html,index.cgi,index.pl,index.php,index.xhtml,index.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Dec 15 12:14:03.859682 2017] [autoindex:error] [pid 5878] [client 127.0.0.1:60958] AH01276: Cannot serve directory /home/fyshtey/dev/callcenter/: No matching DirectoryIndex (index.html,index.cgi,index.pl,index.php,index.xhtml,index.htm) found, and server-generated directory index forbidden by Options directive

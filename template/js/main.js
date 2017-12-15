@@ -5,7 +5,7 @@ jQuery(document).ready(function ($) {
     //Сортировка
     $(".sort input").change(function () {
        var id = $(this).attr('id');
-       $('#load').fadeIn(1000, function () {
+       $('#load').fadeIn(200, function () {
            $.ajax({
                 url: firstSection + '/sort/'+id,
                 type: 'get',
@@ -13,7 +13,7 @@ jQuery(document).ready(function ($) {
 
                 success: function (html) {
                     $('body').html(html);
-                    $('#load').fadeOut(400);
+                    $('#load').fadeOut(100);
                     $('.sort input').eq(id - 1).prop('checked', true);
                     var str =  firstSection + '/sort/' + id;
                     if(window.location.pathname.length <= 7){
@@ -49,7 +49,7 @@ jQuery(document).ready(function ($) {
         e.preventDefault();
         var id = $(this).attr('data-id');
 
-        $('#load').fadeIn(1000, function () {
+        $('#load').fadeIn(200, function () {
             $.ajax({
                 url: firstSection + '/category/'+id,
                 type: 'get',
@@ -59,7 +59,7 @@ jQuery(document).ready(function ($) {
 
                 success: function (html) {
                     $('body').html(html);
-                    $('#load').fadeOut(400);
+                    $('#load').fadeOut(100);
 
                     var str = firstSection + '/category/' + id;
                         history.pushState(null, null, str);
@@ -76,7 +76,7 @@ jQuery(document).ready(function ($) {
 
         var sort_id = $(this).attr('id');
 
-        $('#load').fadeIn(1000, function () {
+        $('#load').fadeIn(200, function () {
             $.ajax({
                 url: firstSection + '/category/'+s+'/sort/'+sort_id,
                 type: 'get',
@@ -87,7 +87,7 @@ jQuery(document).ready(function ($) {
 
                 success: function (html) {
                     $('body').html(html);
-                    $('#load').fadeOut(400);
+                    $('#load').fadeOut(100);
 
                     var str = firstSection + '/category/' + s + '/sort/' + sort_id;
                     history.pushState(null, null, str);

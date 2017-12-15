@@ -1,27 +1,32 @@
 <?php
+class Db {
+    private $_connection;
+    private static $_instance;
 
-class DB
-{
-    private static $_instance = null;
 
-    public static function run()
-    {
-
-        $paramsPath = ROOT . '/config/db_params.php';
-        $params = include($paramsPath);
-
-        if (self::$_instance === null)
-        {
-            try
-            {
-                self::$_instance = new PDO($params['db_type'].':host='.$params['host'].';dbname='.$params['dbname'], $params['user'], $params['password'], array(PDO::MYSQL_ATTR_INIT_COMMAND => 'SET NAMES utf8'));
-                self::$_instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            }
-            catch (PDOException $e)
-            {
-                echo "Ошибка подключения к базе данных<br>";
-            }
+    public static function getInstance() {
+        if(!self::$_instance) {
+            self::$_instance = new self();
         }
         return self::$_instance;
+    }
+    // Constructor
+    private function __construct() {
+        $paramsPath = ROOT . '/config/db_params.php';
+        $params = include($paramsPath);
+        $this->_connection = new mysqli($params['host'], $params['user'],
+            $params['password'], $params['dbname']);
+        $this->_connection->set_charset("utf8");
+        // Error handling
+        if(mysqli_connect_error()) {
+            trigger_error("Failed to connect to MySQL: " . mysqli_connect_error(),
+                E_USER_ERROR);
+        }
+    }
+
+    private function __clone() { }
+
+    public function getConnection() {
+        return $this->_connection;
     }
 }

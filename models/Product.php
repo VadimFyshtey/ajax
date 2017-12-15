@@ -15,7 +15,7 @@ class Product
 
     public static function getProductById($id){
 
-        $db = DB::run();
+        $db = Db::getInstance()->getConnection();
 
         $productList = [];
 
@@ -25,7 +25,7 @@ class Product
 
         $i = 0;
 
-        while ($row = $result->fetch()){
+        while ($row = $result->fetch_array()){
 
             $productList[$i]['id'] = $row['id'];
             $productList[$i]['name'] = $row['name'];
@@ -40,7 +40,7 @@ class Product
 
     public static function getProductList($val = false){
 
-        $db = DB::run();
+        $db = Db::getInstance()->getConnection();
 
         $productList = [];
 
@@ -67,7 +67,7 @@ class Product
 
         $i = 0;
 
-        while ($row = $result->fetch()){
+        while ($row = $result->fetch_array()){
 
             $productList[$i]['id'] = $row['id'];
             $productList[$i]['name'] = $row['name'];
@@ -85,7 +85,7 @@ class Product
 
         if($cat_id){
 
-            $db = DB::run();
+            $db = Db::getInstance()->getConnection();
 
             $products = [];
 
@@ -106,7 +106,7 @@ class Product
 
             $i = 0;
 
-            while ($row = $result->fetch()){
+            while ($row = $result->fetch_array()){
                 $products[$i]['id'] = $row['id'];
                 $products[$i]['name'] = $row['name'];
                 $products[$i]['price'] = $row['price'];

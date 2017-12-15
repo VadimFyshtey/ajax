@@ -11,7 +11,7 @@ class Category
 
     public static function getCategoriesList(){
 
-        $db = DB::run();
+        $db = Db::getInstance()->getConnection();
 
         $categoryList = [];
 
@@ -19,7 +19,7 @@ class Category
 
         $i = 0;
 
-        while ($row = $result->fetch()){
+        while ($row = $result->fetch_array()){
 
             $categoryList[$i]['id'] = $row['id'];
             $categoryList[$i]['name'] = $row['name'];
